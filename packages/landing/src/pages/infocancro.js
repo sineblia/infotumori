@@ -17,8 +17,6 @@ import DonationFormSection from 'containers/Donation/DonationForm';
 import Covid19Map from 'containers/Donation/Covid19Map';
 import DonationGoal from 'containers/Donation/DonationGoal';
 import DoctorsSuggestions from 'containers/Donation/DoctorsSuggestions';
-import InfoCancro from 'containers/Donation/InfoCancro'
-import Prevenzione from 'containers/Donation/Prevenzione'
 import ThankYou from 'containers/Donation/ThankYou';
 import Footer from 'containers/Donation/Footer';
 
@@ -27,7 +25,7 @@ const Donation = () => {
     <ThemeProvider theme={theme}>
       <Fragment>
         <Head>
-          <title>infotumori.it – Portale d'informazione</title>
+          <title>Donation | A react next landing page</title>
           <meta name="theme-color" content="#FF825C" />
           <meta name="Description" content="React next landing page" />
 
@@ -45,16 +43,7 @@ const Donation = () => {
               <Navbar />
             </DrawerProvider>
           </Sticky>
-          <Banner />
-          <InfoCancro />
-          <Prevenzione />
-          <Service />
-          <CovidMap>
-            <DonationFormSection />
-            <Covid19Map />
-          </CovidMap>
-          <DoctorsSuggestions />
-          <DonationGoal />
+
           <ThankYou />
           <Footer />
         </ContentWrapper>

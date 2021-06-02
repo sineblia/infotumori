@@ -8,30 +8,26 @@ import SectionHeading from "../SectionHeading";
 import { data } from "common/data/Donation";
 import Zoom from 'react-reveal/Zoom';
 
-import Link from 'next/link';
 
-
-const InfoCancro = () => {
+const Prevenzione = () => {
   return (
     <Section id="docs-suggestions">
       <Container>
         <Zoom>
           <SectionHeading
-            title="Cos'è il tumore?"
-            desc="Il tumore, noto anche come cancro nel caso di tumori maligni o neoplasia, è una massa di tessuto che cresce in eccesso ed in modo scoordinato rispetto ai tessuti normali, e che persiste in questo stato dopo la cessazione degli stimoli che hanno indotto il processo (cit. in Robbins Basic Pathology, 8ª edizione, Saunders/Elsevier 2007, cap. 6)."
+            title="Come posso prevenire?"
+            desc="La prevenzione è una delle armi migliori che ci permette di combattere il cancro. Leggi di più per capire le regole principali per condurre uno stile di vita sano."
           />
         </Zoom>
-        <div style={{ textAlign: "center" }}>
-          <Link href="/infocancro">
-            <Button title="Scopri di più" />
-          </Link>
+        <div style={{textAlign: "center"}}>
+          <Button title="Scopri di più" />
         </div>
       </Container>
     </Section>
   );
 };
 
-export default InfoCancro;
+export default Prevenzione;
 
 const Section = styled.section`
   padding-top: 70px;
