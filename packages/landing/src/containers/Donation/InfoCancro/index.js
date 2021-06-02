@@ -1,36 +1,35 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "common/components/Image";
+import Button from 'common/components/Button';
 import Container from "common/components/UI/Container";
 import SectionHeading from "../SectionHeading";
 
 import { data } from "common/data/Donation";
 import Zoom from 'react-reveal/Zoom';
+import { textAlign } from "styled-system";
 
-const DoctorsSuggestions = () => {
+const InfoCancro = () => {
   return (
     <Section id="docs-suggestions">
       <Container>
         <Zoom>
           <SectionHeading
-            title="Some Suggestion by doctors to safe"
-            desc="COVID19 is an infectious disease caused by a newly discovered corona virus. Most people infected with the COVID19"
+            title="Cos'è il tumore?"
+            desc="Il tumore, noto anche come cancro nel caso di tumori maligni o neoplasia, è una massa di tessuto che cresce in eccesso ed in modo scoordinato rispetto ai tessuti normali, e che persiste in questo stato dopo la cessazione degli stimoli che hanno indotto il processo (cit. in Robbins Basic Pathology, 8ª edizione, Saunders/Elsevier 2007, cap. 6)."
           />
         </Zoom>
-        <ContentWrapper>
-          {data?.suggestions?.map((item) => (
-            <Figure key={item.id}>
-              <Image src={item.thumb} alt={item.title} />
-              <figcaption>{item.title}</figcaption>
-            </Figure>
-          ))}
-        </ContentWrapper>
+        <Button title="Scopri di più" />
       </Container>
     </Section>
   );
 };
 
-export default DoctorsSuggestions;
+export default InfoCancro;
+
+const buttonStyle = {
+  textAlign: 'center'
+};
 
 const Section = styled.section`
   padding-top: 70px;

@@ -17,6 +17,7 @@ import DonationFormSection from 'containers/Donation/DonationForm';
 import Covid19Map from 'containers/Donation/Covid19Map';
 import DonationGoal from 'containers/Donation/DonationGoal';
 import DoctorsSuggestions from 'containers/Donation/DoctorsSuggestions';
+import InfoCancro from 'containers/Donation/InfoCancro'
 import ThankYou from 'containers/Donation/ThankYou';
 import Footer from 'containers/Donation/Footer';
 
@@ -44,6 +45,7 @@ const Donation = () => {
             </DrawerProvider>
           </Sticky>
           <Banner />
+          <InfoCancro />
           <Service />
           <CovidMap>
             <DonationFormSection />
