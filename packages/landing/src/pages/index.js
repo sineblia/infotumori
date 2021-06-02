@@ -25,7 +25,7 @@ const Donation = () => {
     <ThemeProvider theme={theme}>
       <Fragment>
         <Head>
-          <title>Donation | A react next landing page</title>
+          <title>infotumori.it – Portale d'informazione</title>
           <meta name="theme-color" content="#FF825C" />
           <meta name="Description" content="React next landing page" />
 

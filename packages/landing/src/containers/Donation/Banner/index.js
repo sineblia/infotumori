@@ -27,11 +27,11 @@ const Banner = () => {
           <BannerContent>
             <Heading
               as="h1"
-              content="Stay home, be safe &amp; donate helpless"
+              content="Informati per prevenire e per curare"
             />
             <Text
               className="banner-caption"
-              content="There will be a day–in our lifetime–when we get to celebrate every person on the planet having access to clean water. We want to celebrate that day with you."
+              content="Questa semplice pagina, totalmente gratuita, intende fornire le informazioni essenziali e le principali risorse per informarsi sul cancro. È rivolta alle persone che vogliono informarsi, prevenire, curare."
             />
             <ButtonGroup>
               <Button title="Make a Donation" />

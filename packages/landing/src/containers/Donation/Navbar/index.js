@@ -14,11 +14,12 @@ import NavbarWrapper, {
   MenuArea,
   MobileMenu,
 } from './navbar.style';
-import logoDark from 'common/assets/image/donation/logo-dark.png';
+// import logoDark from 'common/assets/image/donation/logo-dark.png';
+import logoDark from 'common/assets/image/donation/logo.svg';
 
 import { data } from 'common/data/Donation';
 
-const Navbar = () => {
+const Navbar =    () => {
   const [mobileMenu, setMobileMenu] = useState(false);
 
   const scrollItems = [];

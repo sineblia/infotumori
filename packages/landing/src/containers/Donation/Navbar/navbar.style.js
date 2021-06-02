@@ -21,7 +21,7 @@ const NavbarWrapper = styled.header`
 export const LogoContainer = styled.div`
   min-width: 150px;
   position: relative;
-  min-height: 40px;
+  // min-height: 40px;
   margin-right: 80px;
   margin-top: 3px;
   @media only screen and (max-width: 1024px) {
