@@ -37,14 +37,6 @@ const Banner = () => {
               <Button title="Make a Donation" />
               <Button title="Invite Others" className="button-white" />
             </ButtonGroup>
-            <TrustedBy>
-              <Text content="Trusted by:" />
-              <ImageGroup>
-                <Image src={paypal} alt="paypal" />
-                <Image src={google} alt="google" />
-                <Image src={dropbox} alt="dropbox" />
-              </ImageGroup>
-            </TrustedBy>
           </BannerContent>
         </Container>
         <Illustration />

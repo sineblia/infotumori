@@ -55,7 +55,7 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.11.1",
-    "firebase-tools": "^8.16.2",
+    "firebase-tools": "^9.12.1",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^8.0.0"

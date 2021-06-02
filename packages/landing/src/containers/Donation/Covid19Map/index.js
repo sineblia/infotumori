@@ -10,15 +10,20 @@ import SectionHeading from '../SectionHeading';
 import { data } from 'common/data/Donation';
 import mapIllustration from 'common/assets/image/donation/map-illustration.png';
 
+import SimpleMap from './googlemap';
+
+
+
 const Covid19Map = () => {
   return (
     <Section id="covid-map">
       <Container>
         <SectionHeading
           className="heading"
-          title="Those states which affected COVID-19"
-          desc="We are organizing a program on November 20, 2020 to help the homeless people. Our aim is to provide them a specific place to live."
+          title="Dove curare il cancro in Italia"
+          desc="Consulta la mappa per vedere dove si trovano le cliniche oncologiche specializzate."
         />
+        {/* <SimpleMap /> */}
         <Figure>
           <Image src={mapIllustration} alt="map illustration" />
           <figcaption>

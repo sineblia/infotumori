@@ -15,12 +15,11 @@ const Service = () => {
   return (
     <Section id="our-mission">
       <Container>
-        <Zoom>
-          <SectionHeading
-            title="Come posso prevenire?"
-            desc="Si può prevenire assumendo uno stile di vita più sano, e conducendo attività di screening per individuare ereditarietà o lesioni cancerose agli stadi iniziali."
-          />
-        </Zoom>
+        <SectionHeading
+          title="Come posso prevenire?"
+          desc="Si può prevenire assumendo uno stile di vita più sano, e conducendo attività di screening per individuare ereditarietà o lesioni cancerose agli stadi iniziali."
+        />
+
         <ServiceWrapper>
           {data.services.map((service) => (
             <BlogPost
@@ -31,7 +30,7 @@ const Service = () => {
               excerpt={service.desc}
               link={
                 <Link href={service.link}>
-                  Learn More <Icon icon={chevronRight} />
+                  Scopri di più <Icon icon={chevronRight} />
                 </Link>
               }
             />
