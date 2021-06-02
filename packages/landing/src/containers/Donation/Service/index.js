@@ -17,8 +17,8 @@ const Service = () => {
       <Container>
         <Zoom>
           <SectionHeading
-            title="What our mission beyond COVID-19"
-            desc="Build an incredible workplace and grow your business with Gusto’s all-in-one platform with amazing contents."
+            title="Come posso prevenire?"
+            desc="Si può prevenire assumendo uno stile di vita più sano, e conducendo attività di screening per individuare ereditarietà o lesioni cancerose agli stadi iniziali."
           />
         </Zoom>
         <ServiceWrapper>

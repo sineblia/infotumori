@@ -13,13 +13,12 @@ const Prevenzione = () => {
   return (
     <Section id="docs-suggestions">
       <Container>
-        <Zoom>
-          <SectionHeading
-            title="Come posso prevenire?"
-            desc="La prevenzione è una delle armi migliori che ci permette di combattere il cancro. Leggi di più per capire le regole principali per condurre uno stile di vita sano."
-          />
-        </Zoom>
-        <div style={{textAlign: "center"}}>
+        <SectionHeading
+          title="Come posso prevenire?"
+          desc="La prevenzione è una delle armi migliori che ci permette di combattere il cancro. Leggi di più per capire le regole principali per condurre uno stile di vita sano."
+        />
+
+        <div style={{ textAlign: "center" }}>
           <Button title="Scopri di più" />
         </div>
       </Container>

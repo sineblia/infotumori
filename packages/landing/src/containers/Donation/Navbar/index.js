@@ -41,9 +41,9 @@ const Navbar =    () => {
       <Container>
         <LogoContainer>
           <Logo
-            href="/donation"
+            href="/"
             logoSrc={logoDark}
-            title="Donation"
+            title="infotumori"
             className="logo-dark"
           />
         </LogoContainer>
