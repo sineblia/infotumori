@@ -10,10 +10,6 @@ import SectionHeading from '../SectionHeading';
 import { data } from 'common/data/Donation';
 import mapIllustration from 'common/assets/image/donation/map-illustration.png';
 
-import SimpleMap from './googlemap';
-
-
-
 const Covid19Map = () => {
   return (
     <Section id="covid-map">
@@ -23,7 +19,7 @@ const Covid19Map = () => {
           title="Dove curare il cancro in Italia"
           desc="Consulta la mappa per vedere dove si trovano le cliniche oncologiche specializzate."
         />
-        {/* <SimpleMap /> */}
+        
         <Figure>
           <Image src={mapIllustration} alt="map illustration" />
           <figcaption>
