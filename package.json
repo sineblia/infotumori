@@ -34,5 +34,8 @@
     "*.{js,md,css}": [
       "prettier --trailing-comma es5 --single-quote --write"
     ]
+  },
+  "dependencies": {
+    "next": "^10.2.3"
   }
 }
