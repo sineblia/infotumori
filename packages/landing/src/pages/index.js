@@ -50,11 +50,9 @@ const Donation = () => {
           <InfoCancro />
           <Service />
           <CovidMap>
-            <DonationFormSection />
+            <DoctorsSuggestions />
             <Covid19Map />
           </CovidMap>
-          <DoctorsSuggestions />
-          <DonationGoal />
           <ThankYou />
           <Footer />
         </ContentWrapper>

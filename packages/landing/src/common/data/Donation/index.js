@@ -139,22 +139,32 @@ export const data = {
     {
       id: 1,
       thumb: suggestion1,
-      title: 'Wash your hand at least 20 sec',
+      title: 'Chirurgia',
     },
     {
       id: 2,
       thumb: suggestion2,
-      title: 'Cover your coughs or sneeze',
+      title: 'Radioterapia',
     },
     {
       id: 3,
       thumb: suggestion3,
-      title: 'Clean & disinfect frequently touched object & surfaces.',
+      title: 'Chemioterapia',
     },
     {
       id: 4,
       thumb: suggestion4,
-      title: 'Don’t eat raw food, thoroughly cook eggs & meat.',
+      title: 'Immunoterapia',
+    },
+    {
+      id: 5,
+      thumb: suggestion4,
+      title: 'Terapia ormonale',
+    },
+    {
+      id: 5,
+      thumb: suggestion4,
+      title: 'Farmaci a bersaglio molecolare',
     },
   ],
   footerNav: [

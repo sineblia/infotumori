@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import Image from "common/components/Image";
-import Container from "common/components/UI/Container";
-import SectionHeading from "../SectionHeading";
+import React from 'react';
+import styled from 'styled-components';
+import Image from 'common/components/Image';
+import Container from 'common/components/UI/Container';
+import SectionHeading from '../SectionHeading';
 
-import { data } from "common/data/Donation";
+import { data } from 'common/data/Donation';
 import Zoom from 'react-reveal/Zoom';
 
 const DoctorsSuggestions = () => {
@@ -13,8 +13,8 @@ const DoctorsSuggestions = () => {
       <Container>
         <Zoom>
           <SectionHeading
-            title="Some Suggestion by doctors to safe"
-            desc="COVID19 is an infectious disease caused by a newly discovered corona virus. Most people infected with the COVID19"
+            title="Come posso curare?"
+            desc="Grazie alla ricerca, oggi abbiamo a disposizione molti strumenti per poter combattere il cancro. Questi variano in base alla tipologia del tumore e alla sua fase."
           />
         </Zoom>
         <ContentWrapper>
@@ -44,7 +44,7 @@ const Section = styled.section`
 const ContentWrapper = styled.div`
   gap: 50px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   @media only screen and (max-width: 768px) {
     gap: 50px 30px;
     grid-template-columns: repeat(2, 1fr);

@@ -98,7 +98,6 @@ export const CovidMap = styled.div`
     #f9fafc 89.1%,
     rgba(249, 250, 252, 0) 100%
   );
-  position: relative;
   z-index: 0;
   @media only screen and (max-width: 768px) {
     padding-top: 50px;
