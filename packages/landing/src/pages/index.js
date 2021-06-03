@@ -1,3 +1,5 @@
+import 'tailwindcss/tailwind.css';
+
 import React, { Fragment } from 'react';
 import Head from 'next/head';
 import Sticky from 'react-stickynode';
@@ -17,7 +19,7 @@ import DonationFormSection from 'containers/Donation/DonationForm';
 import Covid19Map from 'containers/Donation/Covid19Map';
 import DonationGoal from 'containers/Donation/DonationGoal';
 import DoctorsSuggestions from 'containers/Donation/DoctorsSuggestions';
-import InfoCancro from 'containers/Donation/InfoCancro'
+import InfoCancro from 'containers/Donation/InfoCancro';
 import ThankYou from 'containers/Donation/ThankYou';
 import Footer from 'containers/Donation/Footer';
 
