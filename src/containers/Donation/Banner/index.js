@@ -34,8 +34,8 @@ const Banner = () => {
               content="Questa semplice pagina, totalmente gratuita, intende fornire le informazioni essenziali e le principali risorse per informarsi sul cancro. È rivolta alle persone che vogliono informarsi, prevenire, curare."
             />
             <ButtonGroup>
-              <Button title="Make a Donation" />
-              <Button title="Invite Others" className="button-white" />
+              <Button title="Cos'è il Cancro" />
+              <Button title="Chi siamo" className="button-white" />
             </ButtonGroup>
           </BannerContent>
         </Container>
