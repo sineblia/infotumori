@@ -16,7 +16,7 @@ import {
 } from './footer.style';
 
 import { data } from 'common/data/Donation';
-import logoDark from 'common/assets/image/donation/logo-dark.png';
+import logoDark from 'common/assets/image/donation/logo.svg';
 
 const Footer = () => {
   const handleSubmit = (e) => {
@@ -27,7 +27,9 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <Container>
-        <Subscription>
+        {/* Il modulo subscription abilita una sezione dove sarebbe possibile iscriversi alla newsletter. Per ora è disabilitato. */}
+
+        {/* <Subscription>
           <Heading content="Don’t forget to subscribe for any update about COVID-19" />
           <SubscriptionForm onSubmit={handleSubmit}>
             <Input
@@ -37,11 +39,11 @@ const Footer = () => {
             />
             <Button title="Subscribe" type="submit" />
           </SubscriptionForm>
-        </Subscription>
+        </Subscription> */}
         <FooterBottom>
           <FooterLeft>
             <Image src={logoDark} alt="logo" />
-            <Text content="Copyright 2020 by donate org." />
+            <p>Coded with love by <a href="https://simonebellavia.com" target="_blank">Simone</a></p>
           </FooterLeft>
           <FooterNav>
             {data?.footerNav?.map((nav) => (
