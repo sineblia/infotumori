@@ -13,6 +13,7 @@ import {
   FooterBottom,
   FooterLeft,
   FooterNav,
+  ReferenceContainer,
 } from './footer.style';
 
 import { data } from 'common/data/Donation';
@@ -29,21 +30,25 @@ const Footer = () => {
       <Container>
         {/* Il modulo subscription abilita una sezione dove sarebbe possibile iscriversi alla newsletter. Per ora è disabilitato. */}
 
-        {/* <Subscription>
-          <Heading content="Don’t forget to subscribe for any update about COVID-19" />
+        <Subscription>
+          <Heading content="Iscriviti alla newsletter per ricevere tutti i nostri aggiornamenti!" />
           <SubscriptionForm onSubmit={handleSubmit}>
             <Input
               type="email"
-              placeholder="Enter Email address"
+              placeholder="Inserisci il tuo indirizzo email"
               className="input-field"
             />
-            <Button title="Subscribe" type="submit" />
+            <Button title="Iscriviti" type="submit" />
           </SubscriptionForm>
-        </Subscription> */}
+        </Subscription>
         <FooterBottom>
           <FooterLeft>
-            <Image src={logoDark} alt="logo" />
-            <p>Coded with love by <a href="https://simonebellavia.com" target="_blank">Simone</a></p>
+            <ReferenceContainer>
+              <div className="flex flex-col">
+                <Image src={logoDark} alt="logo" className="py-2" />
+                <p>Realized with <span role="img" aria-label="heart">❤️</span> by <a href="https://simonebellavia.com" target="_blank">Simone</a></p>
+              </div>
+            </ReferenceContainer>
           </FooterLeft>
           <FooterNav>
             {data?.footerNav?.map((nav) => (

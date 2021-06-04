@@ -137,3 +137,13 @@ export const FooterNav = styled.ul`
     }
   }
 `;
+
+export const ReferenceContainer = styled.div`
+  p {
+    font-size: 15px;
+    color: ${themeGet("colors.textPrimary")};
+    &:hover {
+      color: ${themeGet("colors.primary")};
+    }
+  }
+`;
