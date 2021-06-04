@@ -10,6 +10,8 @@ import SectionHeading from '../SectionHeading';
 import { data } from 'common/data/Donation';
 import mapIllustration from 'common/assets/image/donation/map-illustration.png';
 
+import SimpleMap from 'containers/Donation/GoogleMap';
+
 const Covid19Map = () => {
   return (
     <Section id="covid-map">
@@ -20,7 +22,9 @@ const Covid19Map = () => {
           desc="Consulta la mappa per vedere dove si trovano le cliniche oncologiche specializzate."
         />
         
-        <Figure>
+        <SimpleMap />
+
+        {/* <Figure>
           <Image src={mapIllustration} alt="map illustration" />
           <figcaption>
             <Text content="Top death report:" />
@@ -33,7 +37,7 @@ const Covid19Map = () => {
               ))}
             </EffectedCountry>
           </figcaption>
-        </Figure>
+        </Figure> */}
       </Container>
     </Section>
   );

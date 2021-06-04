@@ -20,6 +20,8 @@
     "@styled-system/theme-get": "^5.1.2",
     "firebase-admin": "^9.4.1",
     "firebase-functions": "^3.11.0",
+    "google-map-react": "^2.1.9",
+    "google-maps-react": "^2.0.6",
     "next": "^10.2.3",
     "next-compose-plugins": "^2.2.1",
     "next-fonts": "1.5.1",
