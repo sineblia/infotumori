@@ -12,9 +12,10 @@ const BlogPost = ({ className, thumbUrl, title, excerpt, link }) => {
 
   return (
     <div className={addAllClasses.join(' ')}>
-      <div className="thumbnail">
+      {/* A seguire c'è il div per abilitare l'icona nelle card */}
+      {/* <div className="thumbnail">
         <img src={thumbUrl} alt={title} />
-      </div>
+      </div> */}
       <div className="content">
         <h3 className="title">{title}</h3>
         <p className="excerpt">{excerpt}</p>

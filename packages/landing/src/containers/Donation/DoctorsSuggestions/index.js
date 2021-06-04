@@ -7,6 +7,8 @@ import SectionHeading from '../SectionHeading';
 import { data } from 'common/data/Donation';
 import Zoom from 'react-reveal/Zoom';
 
+import Curare from 'containers/Donation/Curare';
+
 const DoctorsSuggestions = () => {
   return (
     <Section id="docs-suggestions">
@@ -17,14 +19,15 @@ const DoctorsSuggestions = () => {
             desc="Grazie alla ricerca, oggi abbiamo a disposizione molti strumenti per poter combattere il cancro. Questi variano in base alla tipologia del tumore e alla sua fase."
           />
         </Zoom>
-        <ContentWrapper>
+        <Curare />
+        {/* <ContentWrapper>
           {data?.suggestions?.map((item) => (
             <Figure key={item.id}>
               <Image src={item.thumb} alt={item.title} />
               <figcaption>{item.title}</figcaption>
             </Figure>
           ))}
-        </ContentWrapper>
+        </ContentWrapper> */}
       </Container>
     </Section>
   );
