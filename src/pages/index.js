@@ -30,7 +30,7 @@ const Donation = () => {
         <Head>
           <title>infotumori.it – Portale d'informazione</title>
           <meta name="theme-color" content="#FF825C" />
-          <meta name="Description" content="React next landing page" />
+          <meta name="Description" content="Il portale d'informazione sui tumori e sul cancro." />
 
           {/* Load google fonts */}
           <link
