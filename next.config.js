@@ -6,6 +6,10 @@ const nextConfig = {
   // distDir: '../../dist/functions/next'
 };
 
+module.exports = {
+  target: 'serverless'
+}
+
 module.exports = withPlugins(
   [
     [
