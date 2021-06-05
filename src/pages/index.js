@@ -1,7 +1,4 @@
-import Link from "next/link";
-import Sticky from 'react-stickynode';
-import { DrawerProvider } from 'common/contexts/DrawerContext';
-import Navbar from 'containers/Donation/Navbar';
+import React from "react";
 import SiteLayout from "containers/Donation/Layout/SiteLayout";
 import Banner from "containers/Donation/Banner";
 import Service from "containers/Donation/Service";
@@ -12,7 +9,6 @@ import Covid19Map from "containers/Donation/Covid19Map";
 import DoctorsSuggestions from "containers/Donation/DoctorsSuggestions";
 import InfoCancro from "containers/Donation/InfoCancro";
 import ThankYou from "containers/Donation/ThankYou";
-import Footer from "containers/Donation/Footer";
 
 const Index = () => (
   <div>

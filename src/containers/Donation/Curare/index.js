@@ -23,7 +23,7 @@ const Curare = () => {
                   jianbing microdosing tousled waistcoat.
                 </p>
                 <div className="flex items-center flex-wrap ">
-                  <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">
+                  <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0" href="../../../posts/chirurgia">
                     Learn More
                     <svg
                       className="w-4 h-4 ml-2"
@@ -59,7 +59,7 @@ const Curare = () => {
                   jianbing microdosing tousled waistcoat.
                 </p>
                 <div className="flex items-center flex-wrap ">
-                  <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">
+                  <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0" href="../../../posts/terapia">
                     Learn More
                     <svg
                       className="w-4 h-4 ml-2"

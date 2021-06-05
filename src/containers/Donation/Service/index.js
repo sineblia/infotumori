@@ -13,7 +13,7 @@ import { data } from 'common/data/Donation';
 
 const Service = () => {
   return (
-    <Section id="our-mission">
+    <Section id="prevenzione">
       <Container>
         <SectionHeading
           title="Come posso prevenire?"

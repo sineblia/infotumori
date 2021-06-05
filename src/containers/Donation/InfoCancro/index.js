@@ -13,7 +13,7 @@ import Link from 'next/link';
 
 const InfoCancro = () => {
   return (
-    <Section id="docs-suggestions">
+    <Section id="informazioni">
       <Container>
         <Zoom>
           <SectionHeading

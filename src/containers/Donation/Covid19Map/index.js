@@ -14,7 +14,7 @@ import SimpleMap from 'containers/Donation/GoogleMap';
 
 const Covid19Map = () => {
   return (
-    <Section id="covid-map">
+    <Section id="cliniche">
       <Container>
         <SectionHeading
           className="heading"

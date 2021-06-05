@@ -1,8 +1,3 @@
-import serviceIcon1 from '../../assets/image/donation/our-mission/1.png';
-import serviceIcon2 from '../../assets/image/donation/our-mission/2.png';
-import serviceIcon3 from '../../assets/image/donation/our-mission/3.png';
-import serviceIcon4 from '../../assets/image/donation/our-mission/4.png';
-import serviceIcon5 from '../../assets/image/donation/our-mission/5.png';
 import italy from '../../assets/image/donation/italy.png';
 import china from '../../assets/image/donation/china.png';
 import usa from '../../assets/image/donation/usa.png';
@@ -20,22 +15,22 @@ export const data = {
     },
     {
       label: 'Informazioni',
-      path: '#',
+      path: '#informazioni',
       offset: '70',
     },
     {
       label: 'Prevenzione',
-      path: '#',
+      path: '#prevenzione',
       offset: '120',
     },
     {
       label: 'Trattamento',
-      path: '#',
+      path: '#trattamento',
       offset: '70',
     },
     {
       label: 'Cliniche',
-      path: '#',
+      path: '#cliniche',
       offset: '70',
     },
     {
@@ -50,42 +45,42 @@ export const data = {
       // icon: serviceIcon1,
       title: 'Segui una dieta sana',
       desc: `Una dieta sana, associata al movimento fisico, è un ottimo strumento preventivo.`,
-      link: '/prevenzione/dietasana',
+      link: '/posts/dietasana',
     },
     {
       id: 2,
       // icon: serviceIcon2,
       title: 'Non fumare',
       desc: `Il fumo rappresenta un importante fattore di rischio nell'insorgenza di neoplasie.`,
-      link: '/prevenzione/nonfumare',
+      link: '/posts/nonfumare',
     },
     {
       id: 3,
       // icon: serviceIcon3,
       title: 'Mantieniti attivo',
       desc: `L'esercizio fisico, anche poche ore a settimana, riduce significativamente il rischio del cancro.`,
-      link: '/prevenzione/mantienitiattivo',
+      link: '/posts/mantienitiattivo',
     },
     {
       id: 4,
       // icon: serviceIcon4,
       title: 'Limita il consumo di alcolici',
       desc: `Il consumo di bevande alcoliche costituisce un fattore moltiplicativo nel rischio di tumori.`,
-      link: '/prevenzione/limitaalcolici',
+      link: '/posts/limitaalcolici',
     },
     {
       id: 5,
       // icon: serviceIcon5,
       title: 'Effettua esami di screening',
       desc: `Gli screening oncologici sono fondamentale per individuare precocemente i tumori o loro precursori.`,
-      link: '/prevenzione/esamiscreening',
+      link: '/posts/esamiscreening',
     },
     {
       id: 6,
       // icon: serviceIcon5,
       title: "Evita l'eccessiva esposizione al sole",
       desc: `Il sole fa bene, purché l'esposizione ai raggi UV non sia eccessiva.`,
-      link: '/prevenzione/evitasole',
+      link: '/posts/evitasole',
     },
   ],
   presetAmounts: [
