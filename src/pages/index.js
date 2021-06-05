@@ -1,67 +1,3 @@
-// import 'tailwindcss/tailwind.css';
-
-// import React, { Fragment } from 'react';
-// import Head from 'next/head';
-// import Sticky from 'react-stickynode';
-// import { ThemeProvider } from 'styled-components';
-// import { theme } from 'common/theme/donation';
-// import { ResetCSS } from 'common/assets/css/style';
-// import {
-//   GlobalStyle,
-//   ContentWrapper,
-//   CovidMap,
-// } from 'containers/Donation/donation.style';
-// import { DrawerProvider } from 'common/contexts/DrawerContext';
-// import Navbar from 'containers/Donation/Navbar';
-// import Banner from 'containers/Donation/Banner';
-// import Service from 'containers/Donation/Service';
-// import DonationFormSection from 'containers/Donation/DonationForm';
-// import Covid19Map from 'containers/Donation/Covid19Map';
-// import DonationGoal from 'containers/Donation/DonationGoal';
-// import DoctorsSuggestions from 'containers/Donation/DoctorsSuggestions';
-// import InfoCancro from 'containers/Donation/InfoCancro';
-// import ThankYou from 'containers/Donation/ThankYou';
-// import Footer from 'containers/Donation/Footer';
-
-// const Donation = () => {
-//   return (
-//     <ThemeProvider theme={theme}>
-//       <Fragment>
-//         <Head>
-//           <title>infotumori.it – Portale d'informazione</title>
-//           <meta name="theme-color" content="#FF825C" />
-//           <meta name="Description" content="Il portale d'informazione sui tumori e sul cancro." />
-
-//           {/* Load google fonts */}
-//           <link
-//             rel="stylesheet"
-//             href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&display=swap"
-//           />
-//         </Head>
-//         <ResetCSS />
-//         <GlobalStyle />
-//         <ContentWrapper>
-//           <Sticky top={0} innerZ={99} activeClass="is-sticky">
-//             <DrawerProvider>
-//               <Navbar />
-//             </DrawerProvider>
-//           </Sticky>
-//           <Banner />
-//           <InfoCancro />
-//           <Service />
-//           <CovidMap>
-//             <DoctorsSuggestions />
-//             <Covid19Map />
-//           </CovidMap>
-//           <ThankYou />
-//           <Footer />
-//         </ContentWrapper>
-//       </Fragment>
-//     </ThemeProvider>
-//   );
-// };
-// export default Donation;
-
 import Link from "next/link";
 import Sticky from 'react-stickynode';
 import { DrawerProvider } from 'common/contexts/DrawerContext';
@@ -80,11 +16,6 @@ import Footer from "containers/Donation/Footer";
 
 const Index = () => (
   <div>
-    <Sticky top={0} innerZ={99} activeClass="is-sticky">
-      <DrawerProvider>
-        <Navbar />
-      </DrawerProvider>
-    </Sticky>
     <Banner />
     <InfoCancro />
     <Service />
