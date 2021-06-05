@@ -11,7 +11,7 @@ import Curare from 'containers/Donation/Curare';
 
 const DoctorsSuggestions = () => {
   return (
-    <Section id="docs-suggestions">
+    <Section id="trattamento">
       <Container>
         <Zoom>
           <SectionHeading
@@ -20,14 +20,6 @@ const DoctorsSuggestions = () => {
           />
         </Zoom>
         <Curare />
-        {/* <ContentWrapper>
-          {data?.suggestions?.map((item) => (
-            <Figure key={item.id}>
-              <Image src={item.thumb} alt={item.title} />
-              <figcaption>{item.title}</figcaption>
-            </Figure>
-          ))}
-        </ContentWrapper> */}
       </Container>
     </Section>
   );

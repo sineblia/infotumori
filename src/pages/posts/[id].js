@@ -33,7 +33,7 @@ export default function Post({ postData }) {
               className="h-64 bg-cover lg:rounded-lg lg:h-full"
               style={{
                 backgroundImage:
-                  'url("https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80")',
+                  `url(${postData.image})`
               }}
             />
           </div>
