@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const InfoCancro = () => (
   <div>
     
-    <Section>
-      <section className="bg-gray-100 dark:bg-gray-900 lg:py-12 lg:flex flex-col lg:justify-center items-center">
+    
+      <section className="bg-gray-100 dark:bg-gray-900 lg:py-28 lg:flex flex-col lg:justify-center items-center">
         <div className="bg-white dark:bg-gray-800 lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg lg:rounded-lg">
           <div className="lg:w-1/2">
             <div
@@ -42,7 +42,7 @@ const InfoCancro = () => (
           </p>
         </div>
       </section>
-    </Section>
+    
   </div>
 );
 

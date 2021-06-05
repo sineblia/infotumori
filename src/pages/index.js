@@ -24,7 +24,6 @@ const Index = () => (
       <Covid19Map />
     </CovidMap>
     <ThankYou />
-    <Footer />
   </div>
 );
 
