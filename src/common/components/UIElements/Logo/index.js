@@ -16,13 +16,13 @@ const Logo = ({
 }) => (
   <Link {...props} {...logoWrapperStyle}>
     {withAchor ? (
-      <a {...anchorProps}>
+      <Link {...anchorProps}>
         {logoSrc ? (
           <Image src={logoSrc} alt={title} {...logoStyle} />
         ) : (
           <Text content={title} {...titleStyle} />
         )}
-      </a>
+      </Link>
     ) : (
       <>
         {logoSrc ? (

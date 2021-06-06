@@ -2,7 +2,6 @@ import React from 'react';
 import Zoom from 'react-reveal/Zoom';
 import { Icon } from 'react-icons-kit';
 import { chevronRight } from 'react-icons-kit/feather/chevronRight';
-
 import Container from 'common/components/UI/Container';
 import Link from 'common/components/Link';
 import BlogPost from 'common/components/BlogPost';
