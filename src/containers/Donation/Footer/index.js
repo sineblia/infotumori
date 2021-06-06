@@ -46,7 +46,7 @@ const Footer = () => {
             <ReferenceContainer>
               <div className="flex flex-col">
                 <Image src={logoDark} alt="logo" className="py-2" />
-                <p>Realized with <span role="img" aria-label="heart">❤️</span> by <a href="https://simonebellavia.com" target="_blank">Simone</a></p>
+                <a href="https://simonebellavia.com" target="_blank"><p>Realized with <span role="img" aria-label="heart">❤️</span> by Simone</p></a>
               </div>
             </ReferenceContainer>
           </FooterLeft>
