@@ -10,27 +10,27 @@ export const data = {
   navItems: [
     {
       label: 'Home',
-      path: '#home',
+      path: '/',
       offset: '70',
     },
     {
       label: 'Informazioni',
-      path: '#informazioni',
+      path: '/#informazioni',
       offset: '70',
     },
     {
       label: 'Prevenzione',
-      path: '#prevenzione',
+      path: '/#prevenzione',
       offset: '120',
     },
     {
       label: 'Trattamento',
-      path: '#trattamento',
+      path: '/#trattamento',
       offset: '70',
     },
     {
       label: 'Cliniche',
-      path: '#cliniche',
+      path: '/#cliniche',
       offset: '70',
     },
     {

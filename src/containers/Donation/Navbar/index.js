@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import ScrollSpyMenu from 'common/components/ScrollSpyMenu';
 import Scrollspy from 'react-scrollspy';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import Link from 'next/link'
 import { Icon } from 'react-icons-kit';
 import { androidMenu } from 'react-icons-kit/ionicons/androidMenu';
 import { androidClose } from 'react-icons-kit/ionicons/androidClose';
@@ -34,6 +35,7 @@ const Navbar =    () => {
 
   const handleMenuClose = () => {
     setMobileMenu(false);
+    console.log("menu chiuso!");
   };
 
   return (
@@ -85,13 +87,13 @@ const Navbar =    () => {
           >
             {data.navItems.map((menu, index) => (
               <li key={`menu_key${index}`}>
-                <AnchorLink
+                <Link
                   href={menu.path}
                   offset={menu.offset}
                   onClick={handleMenuClose}
                 >
                   {menu.label}
-                </AnchorLink>
+                </Link>
               </li>
             ))}
           </Scrollspy>
