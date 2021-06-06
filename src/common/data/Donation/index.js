@@ -35,7 +35,7 @@ export const data = {
     },
     {
       label: 'Dona',
-      path: '#',
+      path: '/posts/chirurgia',
       offset: '70',
     },
   ],

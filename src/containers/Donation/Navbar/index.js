@@ -34,8 +34,7 @@ const Navbar =    () => {
   };
 
   const handleMenuClose = () => {
-    setMobileMenu(false);
-    console.log("menu chiuso!");
+    setMobileMenu(!mobileMenu);
   };
 
   return (
@@ -86,11 +85,12 @@ const Navbar =    () => {
             currentClassName="active"
           >
             {data.navItems.map((menu, index) => (
-              <li key={`menu_key${index}`}>
+              <li 
+                key={`menu_key${index}`}
+                onClick={handleMenuClose}>
                 <Link
                   href={menu.path}
                   offset={menu.offset}
-                  onClick={handleMenuClose}
                 >
                   {menu.label}
                 </Link>

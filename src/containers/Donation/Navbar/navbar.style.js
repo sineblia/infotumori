@@ -90,6 +90,7 @@ export const MobileMenu = styled.div`
     opacity: 0;
     visibility: hidden;
     position: absolute;
+    cursor: pointer;
     top: 82px;
     flex-direction: column;
     background-color: ${themeGet('colors.white', '#ffffff')};
