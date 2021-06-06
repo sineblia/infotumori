@@ -26,7 +26,7 @@ export async function getStaticPaths() {
 export default function Post({ postData }) {
   return (
     <div>
-      <section className="bg-gray-100 dark:bg-gray-900 lg:py-28 lg:flex flex-col lg:justify-center items-center">
+      <section className="bg-gray-100 dark:bg-gray-900 py-28 lg:flex flex-col lg:justify-center items-center">
         <div className="bg-white dark:bg-gray-800 lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg lg:rounded-lg">
           <div className="lg:w-1/2">
             <div
