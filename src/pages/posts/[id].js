@@ -50,7 +50,7 @@ export default function Post({ postData }) {
           </div>
         </div>
 
-        <div className="pt-20 pl-40 pr-40 text-left">
+        <div className="pt-20 lg:pl-40 lg:pr-40 md:pl-10 md:pr-10 pl-8 pr-8 text-left">
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </div>
       </section>
