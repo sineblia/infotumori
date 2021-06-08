@@ -19,7 +19,7 @@ const Index = () => (
       <DoctorsSuggestions />
       <Covid19Map />
     </CovidMap>
-    <ThankYou />
+    {/* <ThankYou /> */}
   </div>
 );
 

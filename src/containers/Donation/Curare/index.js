@@ -11,20 +11,20 @@ const Curare = () => {
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <img
                 className="lg:h-48 md:h-36 w-full object-cover object-center"
-                src="https://dummyimage.com/720x400"
+                src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                 alt="blog"
               />
               <div className="p-6">
                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                  Chirurgia
+                  Chirurgia oncologica
                 </h1>
                 <p className="leading-relaxed mb-3">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
+                  Consiste nella rimozione del cancro dal corpo del paziente, a opera di un chirurgo specializzato.
+                  La chirurgia può anche essere utilizzata per prevenire o diagnosticare il cancro o per determinarne lo stadio.
                 </p>
                 <div className="flex items-center flex-wrap ">
                   <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0" href="../../../posts/chirurgia">
-                    Learn More
+                    Scopri di più
                     <svg
                       className="w-4 h-4 ml-2"
                       viewBox="0 0 24 24"
@@ -47,20 +47,20 @@ const Curare = () => {
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <img
                 className="lg:h-48 md:h-36 w-full object-cover object-center"
-                src="https://dummyimage.com/720x400"
+                src="https://images.pexels.com/photos/4047008/pexels-photo-4047008.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                 alt="blog"
               />
               <div className="p-6">
                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                  Terapia
+                  Terapia oncologica
                 </h1>
                 <p className="leading-relaxed mb-3">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
+                Gli scopi primari della terapia oncologica sono la cura della malattia o la palliazione dei sintomi, 
+                cioè il miglioramento della sintomatologia e l'ottimizzazione della qualità di vita il più lungo tempo possibile.
                 </p>
                 <div className="flex items-center flex-wrap ">
                   <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0" href="../../../posts/terapia">
-                    Learn More
+                    Scopri di più
                     <svg
                       className="w-4 h-4 ml-2"
                       viewBox="0 0 24 24"
