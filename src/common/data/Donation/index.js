@@ -163,20 +163,20 @@ export const data = {
       url: '#home',
       title: 'Home',
     },
-    {
-      id: 2,
-      url: '#',
-      title: 'Privacy',
-    },
-    {
-      id: 3,
-      url: '#',
-      title: 'Licence',
-    },
-    {
-      id: 4,
-      url: '#',
-      title: 'Contact us',
-    },
+    // {
+    //   id: 2,
+    //   url: '#',
+    //   title: 'Privacy',
+    // },
+    // {
+    //   id: 3,
+    //   url: '#',
+    //   title: 'Licence',
+    // },
+    // {
+    //   id: 4,
+    //   url: '#',
+    //   title: 'Contact us',
+    // },
   ],
 };

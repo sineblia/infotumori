@@ -30,7 +30,7 @@ const Footer = () => {
       <Container>
         {/* Il modulo subscription abilita una sezione dove sarebbe possibile iscriversi alla newsletter. Per ora è disabilitato. */}
 
-        <Subscription>
+        {/* <Subscription>
           <Heading content="Iscriviti alla newsletter per ricevere tutti i nostri aggiornamenti!" />
           <SubscriptionForm onSubmit={handleSubmit}>
             <Input
@@ -40,7 +40,7 @@ const Footer = () => {
             />
             <Button title="Iscriviti" type="submit" />
           </SubscriptionForm>
-        </Subscription>
+        </Subscription> */}
         <FooterBottom>
           <FooterLeft>
             <ReferenceContainer>

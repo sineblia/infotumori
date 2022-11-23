@@ -1,6 +1,6 @@
 import React from 'react';
 import Zoom from 'react-reveal/Zoom';
-
+import Link from 'next/link';
 import Text from 'common/components/Text';
 import Image from 'common/components/Image';
 import Button from 'common/components/Button';
@@ -34,8 +34,9 @@ const Banner = () => {
               content="Questa semplice pagina, totalmente gratuita, intende fornire le informazioni essenziali e le principali risorse per informarsi sul cancro. È rivolta alle persone che vogliono informarsi, prevenire, curare."
             />
             <ButtonGroup>
-              <Button title="Cos'è il Cancro" />
-              <Button title="Chi siamo" className="button-white" />
+              <Link href="posts/infocancro">
+                <Button title="Cos'è il Cancro" />
+              </Link>
             </ButtonGroup>
           </BannerContent>
         </Container>
