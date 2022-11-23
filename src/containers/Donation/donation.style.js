@@ -6,7 +6,13 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'DM Sans', sans-serif;
   }
 
-  h1,
+  h1 {
+    font-family: 'DM Sans', sans-serif;
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
   h2,
   h3,
   h4,
@@ -20,6 +26,7 @@ export const GlobalStyle = createGlobalStyle`
   input,
   textarea {
     font-family: 'DM Sans', sans-serif;
+    padding-bottom: 20px;
   }
 
   section {

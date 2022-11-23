@@ -33,11 +33,21 @@ const Footer = () => {
         <Subscription>
           <Heading content="Iscriviti alla newsletter per ricevere tutti i nostri aggiornamenti!" />
           
-            <SubscriptionForm name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+            <SubscriptionForm 
+              name="contact" 
+              method="POST" 
+              onSubmit={handleSubmit}
+              action="contact/?success=true"
+              data-netlify="true" 
+              data-netlify-honeypot="bot-field"
+            >
                 <Input
+                  id="email"
+                  name="email"
                   type="email"
                   placeholder="Inserisci il tuo indirizzo email"
                   className="input-field"
+                  required
                 />
                 <Button title="Iscriviti" type="submit" />
             </SubscriptionForm>
