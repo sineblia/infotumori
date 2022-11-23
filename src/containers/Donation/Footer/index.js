@@ -21,8 +21,15 @@ import logoDark from 'common/assets/image/donation/logo.svg';
 
 const Footer = () => {
   const handleSubmit = (e) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
     e.preventDefault();
-    console.log('submitted.');
   };
 
   return (
@@ -32,33 +39,47 @@ const Footer = () => {
 
         <Subscription>
           <Heading content="Iscriviti alla newsletter per ricevere tutti i nostri aggiornamenti!" />
-          
-            <SubscriptionForm 
-              name="contact" 
-              method="POST" 
-              onSubmit={handleSubmit}
-              action="contact/?success=true"
-              data-netlify="true" 
-              data-netlify-honeypot="bot-field"
-            >
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="Inserisci il tuo indirizzo email"
-                  className="input-field"
-                  required
-                />
-                <Button title="Iscriviti" type="submit" />
-            </SubscriptionForm>
-          
+
+          {/* A little help for the Netlify bots */}
+          <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+            <input type="email" name="email" />
+            <textarea name="message"></textarea>
+          </form>
+
+          <SubscriptionForm
+            name="contact"
+            method="POST"
+            onSubmit={handleSubmit}
+            action="contact/?success=true"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <Input
+              id="email"
+              name="email"
+              type="email"
+              value="contact"
+              placeholder="Inserisci il tuo indirizzo email"
+              className="input-field"
+              required
+            />
+            <Button title="Iscriviti" type="submit" />
+          </SubscriptionForm>
         </Subscription>
         <FooterBottom>
           <FooterLeft>
             <ReferenceContainer>
               <div className="flex flex-col">
                 <Image src={logoDark} alt="logo" className="py-2" />
-                <a href="https://simonebellavia.com" target="_blank"><p>Realized with <span role="img" aria-label="heart">❤️</span> by Simone</p></a>
+                <a href="https://simonebellavia.com" target="_blank">
+                  <p>
+                    Realized with{" "}
+                    <span role="img" aria-label="heart">
+                      ❤️
+                    </span>{" "}
+                    by Simone
+                  </p>
+                </a>
               </div>
             </ReferenceContainer>
           </FooterLeft>
