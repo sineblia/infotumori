@@ -6,6 +6,8 @@ import Head from "next/head";
 import SiteLayout from "containers/Donation/Layout/SiteLayout";
 import styled from "styled-components";
 
+
+
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
   return {

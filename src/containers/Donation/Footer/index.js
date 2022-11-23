@@ -30,17 +30,19 @@ const Footer = () => {
       <Container>
         {/* Il modulo subscription abilita una sezione dove sarebbe possibile iscriversi alla newsletter. Per ora è disabilitato. */}
 
-        {/* <Subscription>
+        <Subscription>
           <Heading content="Iscriviti alla newsletter per ricevere tutti i nostri aggiornamenti!" />
-          <SubscriptionForm onSubmit={handleSubmit}>
-            <Input
-              type="email"
-              placeholder="Inserisci il tuo indirizzo email"
-              className="input-field"
-            />
-            <Button title="Iscriviti" type="submit" />
-          </SubscriptionForm>
-        </Subscription> */}
+          
+            <SubscriptionForm name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+                <Input
+                  type="email"
+                  placeholder="Inserisci il tuo indirizzo email"
+                  className="input-field"
+                />
+                <Button title="Iscriviti" type="submit" />
+            </SubscriptionForm>
+          
+        </Subscription>
         <FooterBottom>
           <FooterLeft>
             <ReferenceContainer>
