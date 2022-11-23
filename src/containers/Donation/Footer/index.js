@@ -50,7 +50,6 @@ const Footer = () => {
             name="contact"
             method="POST"
             onSubmit={handleSubmit}
-            action="contact/?success=true"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
