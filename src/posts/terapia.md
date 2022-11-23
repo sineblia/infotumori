@@ -6,7 +6,7 @@ image: "https://images.pexels.com/photos/4047008/pexels-photo-4047008.jpeg?auto=
 id: "terapia-oncologica"
 ---
 
-La terapia sistemica del cancro comprende la chemioterapia (cioè la chemioterapia convenzionale o citotossica), la terapia ormonale, la terapia mirata e la terapia immunitaria (vedi anche Panoramica sulla terapia del cancro). Il numero di terapie antitumorali approvate è in rapido aumento. Il National Cancer Institute mantiene un elenco aggiornato dei farmaci utilizzati per il trattamento del cancro. L'elenco fornisce un breve riassunto degli usi di ciascun farmaco e link a ulteriori informazioni.
+La terapia sistemica del cancro comprende la chemioterapia (cioè la chemioterapia convenzionale o citotossica), la terapia ormonale, la terapia mirata e la terapia immunitaria. Il numero di terapie antitumorali approvate è in rapido aumento. Il National Cancer Institute mantiene un elenco aggiornato dei farmaci utilizzati per il trattamento del cancro. L'elenco fornisce un breve riassunto degli usi di ciascun farmaco e link a ulteriori informazioni.
 
 Il farmaco ideale dovrebbe colpire solo le cellule tumorali e non avere effetti negativi sulle cellule normali. Sebbene i vecchi farmaci chemioterapici siano spesso tossici per le cellule normali, i progressi della genetica e della biologia cellulare e molecolare hanno portato allo sviluppo di farmaci più selettivi.
 
