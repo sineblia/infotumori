@@ -163,11 +163,11 @@ export const data = {
       url: '#home',
       title: 'Home',
     },
-    // {
-    //   id: 2,
-    //   url: '#',
-    //   title: 'Privacy',
-    // },
+    {
+      id: 2,
+      url: 'https://github.com/simoneb1x/infotumori',
+      title: 'Github',
+    },
     // {
     //   id: 3,
     //   url: '#',

@@ -64,7 +64,7 @@ const Footer = () => {
             <ReferenceContainer>
               <div className="flex flex-col">
                 <Image src={logoDark} alt="logo" className="py-2" />
-                <a href="https://simonebellavia.com" target="_blank">
+                <a href="https://simonebellavia.com" target="_blank" className="no-underline">
                   <p>
                     Realized with{" "}
                     <span role="img" aria-label="heart">
@@ -78,8 +78,8 @@ const Footer = () => {
           </FooterLeft>
           <FooterNav>
             {data?.footerNav?.map((nav) => (
-              <li key={nav.id}>
-                <a href={nav.url}>{nav.title}</a>
+              <li key={nav.id} className="list-none">
+                <a href={nav.url} className="no-underline">{nav.title}</a>
               </li>
             ))}
           </FooterNav>

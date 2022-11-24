@@ -13,7 +13,13 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 600;
   }
 
-  h2,
+  h2 {
+    font-family: 'DM Sans', sans-serif;
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
   h3,
   h4,
   h5,
@@ -27,6 +33,19 @@ export const GlobalStyle = createGlobalStyle`
   textarea {
     font-family: 'DM Sans', sans-serif;
     padding-bottom: 20px;
+  }
+
+  ul {
+    padding-left: 24px;
+  }
+
+  li {
+    list-style-type: disc;
+    padding-bottom: 10px;
+  }
+
+  a {
+    text-decoration: underline;
   }
 
   section {
