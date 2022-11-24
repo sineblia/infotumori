@@ -98,7 +98,7 @@ export const ContentWrapper = styled.div`
   }
 `;
 
-export const CovidMap = styled.div`
+export const CurareSection = styled.div`
   padding-top: 70px;
   background: linear-gradient(
     180deg,

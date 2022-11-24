@@ -21,14 +21,15 @@ import logoDark from 'common/assets/image/donation/logo.svg';
 
 const Footer = () => {
   const handleSubmit = (e) => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state })
-    })
-      .then(() => alert("Success!"))
-      .catch(error => alert(error));
+    // fetch("/", {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //   body: encode({ "form-name": "contact", ...this.state })
+    // })
+    //   .then(() => alert("Success!"))
+    //   .catch(error => alert(error));
 
+    console.log("submitted");
     e.preventDefault();
   };
 
@@ -40,24 +41,16 @@ const Footer = () => {
         <Subscription>
           <Heading content="Iscriviti alla newsletter per ricevere tutti i nostri aggiornamenti!" />
 
-          {/* A little help for the Netlify bots */}
-          <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-            <input type="email" name="email" />
-            <textarea name="message"></textarea>
-          </form>
-
           <SubscriptionForm
             name="contact"
             method="POST"
             onSubmit={handleSubmit}
             data-netlify="true"
-            data-netlify-honeypot="bot-field"
           >
             <Input
               id="email"
               name="email"
               type="email"
-              value="contact"
               placeholder="Inserisci il tuo indirizzo email"
               className="input-field"
               required

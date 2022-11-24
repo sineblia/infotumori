@@ -4,6 +4,8 @@ import GoogleMapReact from 'google-map-react';
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
  
 class SimpleMap extends Component {
+
+
   static defaultProps = {
     center: {
       lat: 37.47982123155747,
@@ -14,6 +16,8 @@ class SimpleMap extends Component {
  
   render() {
     return (
+      
+
       // Important! Always set the container height explicitly
       <div style={{ height: '100vh', width: '100%' }}>
         <GoogleMapReact
@@ -28,6 +32,8 @@ class SimpleMap extends Component {
           />
         </GoogleMapReact>
       </div>
+
+      
     );
   }
 }
