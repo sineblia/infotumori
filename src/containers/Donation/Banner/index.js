@@ -34,7 +34,7 @@ const Banner = () => {
               content="Questa semplice pagina, totalmente gratuita, intende fornire le informazioni essenziali e le principali risorse per informarsi sul cancro. È rivolta alle persone che vogliono informarsi, prevenire, curare."
             />
             <ButtonGroup>
-              <Link href="posts/infocancro">
+              <Link href="posts/cos'è-il-tumore">
                 <Button title="Cos'è il Cancro" />
               </Link>
             </ButtonGroup>

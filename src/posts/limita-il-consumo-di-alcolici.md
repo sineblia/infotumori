@@ -3,7 +3,7 @@ title: "Limita il consumo di"
 specialchar: "alcolici"
 desc: "Il consumo di bevande alcoliche costituisce un fattore moltiplicativo nel rischio di tumori."
 image: "https://images.unsplash.com/photo-1552611052-dd922d8f9603?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1001&q=80"
-id: "limitaalcolici"
+id: "limita-il-consumo-di-alcolici"
 ---
 
 Esiste un forte consenso scientifico sul fatto che il consumo di alcol può causare diversi tipi di cancro (1, 2). Nel suo Rapporto sugli agenti cancerogeni, il National Toxicology Program del Dipartimento della Salute e dei Servizi Umani degli Stati Uniti elenca il consumo di bevande alcoliche come un noto agente cancerogeno per l'uomo.

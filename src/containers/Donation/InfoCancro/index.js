@@ -22,7 +22,7 @@ const InfoCancro = () => {
           />
         </Zoom>
         <div style={{ textAlign: "center" }}>
-          <Link href="posts/infocancro">
+          <Link href="posts/cos'è-il-tumore">
             <Button title="Informati sul cancro" />
           </Link>
         </div>

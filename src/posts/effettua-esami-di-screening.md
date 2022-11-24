@@ -3,7 +3,7 @@ title: "Effettua esami di"
 specialchar: "screening"
 desc: "Gli screening oncologici sono fondamentale per individuare precocemente i tumori o loro precursori."
 image: "https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"
-id: "esamiscreening"
+id: "effettua-esami-di-screening"
 ---
 
 Fare lo screening significa controllare il proprio corpo per verificare la presenza di un tumore prima che si manifestino i sintomi. Sottoporsi regolarmente ai test di screening può consentire di individuare precocemente i tumori al seno, al collo dell'utero e al colon-retto, quando è probabile che il trattamento sia più efficace. Lo screening del cancro del polmone è raccomandato per alcune persone ad alto rischio.
