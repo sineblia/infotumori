@@ -7,14 +7,14 @@ import { ResetCSS } from 'common/assets/css/style';
 import {
   GlobalStyle,
   ContentWrapper,
-  CovidMap,
+  CurareSection,
 } from 'containers/Donation/donation.style';
 import { DrawerProvider } from 'common/contexts/DrawerContext';
 import Navbar from 'containers/Donation/Navbar';
 import Banner from 'containers/Donation/Banner';
 import Service from 'containers/Donation/Service';
 import DonationFormSection from 'containers/Donation/DonationForm';
-import Covid19Map from 'containers/Donation/ClinicheMap';
+import ClinicheMap from 'containers/Donation/ClinicheMap';
 import DonationGoal from 'containers/Donation/DonationGoal';
 import DoctorsSuggestions from 'containers/Donation/DoctorsSuggestions';
 import ThankYou from 'containers/Donation/ThankYou';
@@ -45,10 +45,10 @@ const Donation = () => {
           </Sticky>
           <Banner />
           <Service />
-          <CovidMap>
+          <CurareSection>
             <DonationFormSection />
-            <Covid19Map />
-          </CovidMap>
+            <ClinicheMap />
+          </CurareSection>
           <DoctorsSuggestions />
           <DonationGoal />
           <ThankYou />
