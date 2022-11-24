@@ -55,7 +55,7 @@ const Footer = () => {
               className="input-field"
               required
             />
-            {/* <input type="hidden" name="form-name" value="contact" /> */}
+            <input type="hidden" name="form-name" value="contact" />
             <Button title="Iscriviti" type="submit" />
           </SubscriptionForm>
         </Subscription>
