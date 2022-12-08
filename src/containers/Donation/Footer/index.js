@@ -49,13 +49,12 @@ const Footer = () => {
             data-netlify="true"
           >
             <Input
-              name="contact"
+              name="form-name"
               type="text"
               placeholder="Inserisci il tuo indirizzo email"
               className="input-field"
               required
             />
-            <input type="hidden" name="form-name" value="contact" />
             <Button title="Iscriviti" type="submit" />
           </SubscriptionForm>
         </Subscription>
