@@ -59,10 +59,9 @@ const Footer = () => {
             <Button title="Iscriviti" type="submit" />
           </SubscriptionForm> */}
 
-          <form name="contact2" method="POST" netlify data-netlify="true">
+          {/* <form name="contact2" method="POST" netlify data-netlify="true">
             <input type="hidden" name="form-name" value="contact" />
             <p>
-              <input type="text" name="firstname" id="firstname" />
               <label htmlFor="yourname">Your Name:</label> <br />
               <input type="text" name="name" id="yourname" />
             </p>
@@ -77,7 +76,31 @@ const Footer = () => {
             <p>
               <button type="submit">Send</button>
             </p>
-          </form>
+          </form> */}
+
+          <SubscriptionForm
+            name="contact2"
+            method="POST"
+            netlify
+            data-netlify="true"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <Input
+              name="name"
+              type="text"
+              placeholder="Inserisci il tuo nome"
+              className="input-field"
+              required
+            />
+            <Input
+              name="email"
+              type="email"
+              placeholder="Inserisci il tuo indirizzo email"
+              className="input-field"
+              required
+            />
+            <Button title="Iscriviti" type="submit" />
+          </SubscriptionForm>
         </Subscription>
         <FooterBottom>
           <FooterLeft>
