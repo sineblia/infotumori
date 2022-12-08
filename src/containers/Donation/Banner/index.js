@@ -31,7 +31,9 @@ const Banner = () => {
             />
             <Text
               className="banner-caption"
-              content="Questa semplice pagina, totalmente gratuita, intende fornire le informazioni essenziali e le principali risorse per informarsi sul cancro. È rivolta alle persone che vogliono informarsi, prevenire, curare."
+              content="Infotumori è un portale d'informazione gratuito e accessibile a chiunque, che intende fornire 
+                      le informazioni essenziali e le principali risorse per una corretta conoscenza del cancro.
+                      È rivolta alle persone che vogliono informarsi, prevenire e curare."
             />
             <ButtonGroup>
               <Link href="posts/cos'è-il-tumore">

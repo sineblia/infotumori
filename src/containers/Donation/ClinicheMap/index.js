@@ -39,6 +39,7 @@ const ClinicheMap = () => {
           </figcaption>
         </Figure> */}
       </Container>
+
     </Section>
   );
 };
