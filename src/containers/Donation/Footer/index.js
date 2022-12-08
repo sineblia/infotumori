@@ -70,37 +70,22 @@ const Footer = () => {
               <input type="email" name="email" id="youremail" />
             </p>
             <p>
-              <label htmlFor="yourmessage">Message:</label> <br />
-              <textarea name="message" id="yourmessage"></textarea>
-            </p>
-            <p>
               <button type="submit">Send</button>
             </p>
           </form> */}
 
-          <SubscriptionForm
-            name="contact2"
-            method="POST"
-            netlify
-            data-netlify="true"
-          >
+          <form name="contact2" method="POST" netlify data-netlify="true">
             <input type="hidden" name="form-name" value="contact" />
-            <Input
-              name="name"
-              type="text"
-              placeholder="Inserisci il tuo nome"
-              className="input-field"
-              required
-            />
-            <Input
-              name="email"
-              type="email"
-              placeholder="Inserisci il tuo indirizzo email"
-              className="input-field"
-              required
-            />
-            <Button title="Iscriviti" type="submit" />
-          </SubscriptionForm>
+            <p>
+              <input type="text" name="name" id="yourname" placeholder="Il tuo nome" style={{borderRadius: "4px", minHeight: "60px", minWidth: "360px", padding: "0 24px", fontSize: "16px", color: "#484848"}}/>
+            </p>
+            <p>
+              <input type="email" name="email" id="youremail" placeholder="La tua email" style={{borderRadius: "4px", minHeight: "60px", minWidth: "360px", padding: "0 24px", fontSize: "16px", color: "#484848"}}/>
+            </p>
+            <p>
+              <Button title="Iscriviti :)" type="submit" />
+            </p>
+          </form>
         </Subscription>
         <FooterBottom>
           <FooterLeft>
