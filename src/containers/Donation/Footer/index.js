@@ -1,10 +1,10 @@
-import React from 'react';
-import Text from 'common/components/Text';
-import Input from 'common/components/Input';
-import Image from 'common/components/Image';
-import Button from 'common/components/Button';
-import Heading from 'common/components/Heading';
-import Container from 'common/components/UI/Container';
+import React from "react";
+import Text from "common/components/Text";
+import Input from "common/components/Input";
+import Image from "common/components/Image";
+import Button from "common/components/Button";
+import Heading from "common/components/Heading";
+import Container from "common/components/UI/Container";
 
 import {
   FooterWrapper,
@@ -14,10 +14,10 @@ import {
   FooterLeft,
   FooterNav,
   ReferenceContainer,
-} from './footer.style';
+} from "./footer.style";
 
-import { data } from 'common/data/Donation';
-import logoDark from 'common/assets/image/donation/logo.svg';
+import { data } from "common/data/Donation";
+import logoDark from "common/assets/image/donation/logo.svg";
 
 const Footer = () => {
   const handleSubmit = (e) => {
@@ -41,7 +41,7 @@ const Footer = () => {
         <Subscription>
           <Heading content="Iscriviti alla newsletter per ricevere tutti i nostri aggiornamenti!" />
 
-          <SubscriptionForm
+          {/* <SubscriptionForm
             name="contact"
             method="POST"
             // onSubmit={handleSubmit}
@@ -49,21 +49,56 @@ const Footer = () => {
             data-netlify="true"
           >
             <Input
-              name="form-name"
+              name="contact"
               type="text"
               placeholder="Inserisci il tuo indirizzo email"
               className="input-field"
               required
             />
+            <input type="hidden" name="form-name" value="contact" />
             <Button title="Iscriviti" type="submit" />
-          </SubscriptionForm>
+          </SubscriptionForm> */}
+
+          <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>
+                Your Name: <input type="text" name="name" />
+              </label>
+            </p>
+            <p>
+              <label>
+                Your Email: <input type="email" name="email" />
+              </label>
+            </p>
+            <p>
+              <label>
+                Your Role:{" "}
+                <select name="role[]" multiple>
+                  <option value="leader">Leader</option>
+                  <option value="follower">Follower</option>
+                </select>
+              </label>
+            </p>
+            <p>
+              <label>
+                Message: <textarea name="message"></textarea>
+              </label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
         </Subscription>
         <FooterBottom>
           <FooterLeft>
             <ReferenceContainer>
               <div className="flex flex-col">
                 <Image src={logoDark} alt="logo" className="py-2" />
-                <a href="https://simonebellavia.com" target="_blank" className="no-underline">
+                <a
+                  href="https://simonebellavia.com"
+                  target="_blank"
+                  className="no-underline"
+                >
                   <p>
                     Realized with{" "}
                     <span role="img" aria-label="heart">
@@ -78,7 +113,9 @@ const Footer = () => {
           <FooterNav>
             {data?.footerNav?.map((nav) => (
               <li key={nav.id} className="list-none">
-                <a href={nav.url} className="no-underline">{nav.title}</a>
+                <a href={nav.url} className="no-underline">
+                  {nav.title}
+                </a>
               </li>
             ))}
           </FooterNav>
