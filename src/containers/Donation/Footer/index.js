@@ -21,13 +21,6 @@ import logoDark from "common/assets/image/donation/logo.svg";
 
 const Footer = () => {
   const handleSubmit = (e) => {
-    // fetch("/", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //   body: encode({ "form-name": "contact", ...this.state })
-    // })
-    //   .then(() => alert("Success!"))
-    //   .catch(error => alert(error));
 
     console.log("submitted");
     e.preventDefault();
@@ -36,43 +29,9 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <Container>
-        {/* Il modulo subscription abilita una sezione dove sarebbe possibile iscriversi alla newsletter. Per ora è disabilitato. */}
 
         <Subscription>
           <Heading content="Iscriviti alla newsletter per ricevere tutti i nostri aggiornamenti!" />
-
-          {/* <SubscriptionForm
-            name="contact"
-            method="POST"
-            // onSubmit={handleSubmit}
-            netlify
-            data-netlify="true"
-          >
-            <Input
-              name="contact"
-              type="text"
-              placeholder="Inserisci il tuo indirizzo email"
-              className="input-field"
-              required
-            />
-            <input type="hidden" name="form-name" value="contact" />
-            <Button title="Iscriviti" type="submit" />
-          </SubscriptionForm> */}
-
-          {/* <form name="contact2" method="POST" netlify data-netlify="true">
-            <input type="hidden" name="form-name" value="contact" />
-            <p>
-              <label htmlFor="yourname">Your Name:</label> <br />
-              <input type="text" name="name" id="yourname" />
-            </p>
-            <p>
-              <label htmlFor="youremail">Your Email:</label> <br />
-              <input type="email" name="email" id="youremail" />
-            </p>
-            <p>
-              <button type="submit">Send</button>
-            </p>
-          </form> */}
 
           <form name="contact2" method="POST" netlify data-netlify="true">
             <input type="hidden" name="form-name" value="contact" />
