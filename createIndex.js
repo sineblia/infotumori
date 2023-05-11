@@ -1,16 +1,20 @@
-import client from "./lib/elasticsearch";
-import { connectToDatabase } from "./lib/mongodb";
+const dotenv = require("dotenv");
+
+dotenv.config();
+
+const client = require("./lib/elasticsearch");
+const { connectToDatabase } = require("./lib/mongodb");
 
 async function createIndex() {
   // Connetti a MongoDB e recupera i dati dei tumori
   const { db } = await connectToDatabase();
-  const tumors = await db.collection("tumors").find().toArray();
+  const tumors = await db.collection('tumors').find().toArray();
 
   // Crea l'indice Elasticsearch
-  const indexName = "tumors";
+  const indexName = 'tumors';
 
   // Verifica se l'indice esiste già
-  const indexExists = await client.indices.exists({ index: indexName });
+  const indexExists = await client.indices.existsAlias({ name: indexName });
 
   // Se l'indice esiste, eliminalo
   if (indexExists.body) {
