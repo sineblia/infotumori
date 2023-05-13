@@ -1,36 +1,39 @@
 // components/Search.js
-import { useState, useEffect } from "react";
-import useSWR from "swr";
-import _ from "lodash";
+import React, { useEffect, useState, useCallback } from 'react';
+import useSWR from 'swr';
+import { debounce } from 'lodash';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
-export default function Search() {
-  const [term, setTerm] = useState("");
-  const [debouncedTerm, setDebouncedTerm] = useState("");
+const Search = () => {
+  const [term, setTerm] = useState('');
+  const [debouncedTerm, setDebouncedTerm] = useState('');
+
+  // Creazione di una funzione debounce
+  const debouncedSave = useCallback(
+    debounce((nextValue) => setDebouncedTerm(nextValue), 500),
+    [] // verrà ricreato solo se le dipendenze cambiano
+  );
 
   useEffect(() => {
-    const timerId = setTimeout(() => {
-      setDebouncedTerm(term);
-    }, 500);
-
-    return () => {
-      clearTimeout(timerId);
-    };
-  }, [term]);
+    debouncedSave(term);
+  }, [term, debouncedSave]);
 
   const { data, error } = useSWR(`/api/search?term=${debouncedTerm}`, fetcher);
+
+  const handleSearch = (event) => {
+    setTerm(event.target.value);
+  }
 
   if (error) return <div>Failed to load</div>;
   if (!data) return <div>Loading...</div>;
 
   return (
     <div>
-      <input
+      <input 
         type="text"
-        value={term}
-        onChange={(e) => setTerm(e.target.value)}
         placeholder="Inserisci il nome del tumore..."
+        onChange={handleSearch}
       />
       {data.map((tumore) => (
         <div key={tumore._id}>
@@ -40,4 +43,6 @@ export default function Search() {
       ))}
     </div>
   );
-}
+};
+
+export default Search;
