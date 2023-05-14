@@ -9,20 +9,12 @@ export default async (req, res) => {
     return;
   }
 
-  const tumori = await db
-    .collection("Tumori") // Corretto il nome della collezione
-    .aggregate([
-      {
-        $search: {
-          index: 'default',
-          text: {
-            query: term,
-            path: ['nome', 'descrizione'],  // i campi su cui eseguire la ricerca
-          },
-        },
-      },
-    ])
+  const tumors = await db
+    .collection("tumors") // Utilizza il nome corretto della collection
+    .find({ name: { $regex: term, $options: "i" } })
     .toArray();
 
-  res.json(tumori);
+  console.log(tumors);
+
+  res.json(tumors);
 };
