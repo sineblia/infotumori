@@ -4,7 +4,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Informazioni", href: "#" },
+  { name: "Informazioni", href: "/search_tumors" },
   { name: "Prevenzione", href: "#" },
   { name: "Trattamento", href: "#" },
 ];
@@ -20,8 +20,8 @@ export default function Navbar() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+          <a href="/" className="-m-1.5 p-1.5">
+            <span className="sr-only">Infotumori</span>
             <img
               className="h-4 w-auto"
               src="https://i.imgur.com/f3bFNFA.png"
@@ -51,12 +51,13 @@ export default function Navbar() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          {/* <a
-              href="#"
+          <a
+              href="https://simonebellavia.com"
               className="text-sm font-semibold leading-6 text-gray-900"
+              target="_blank"
             >
-              Log in <span aria-hidden="true">&rarr;</span>
-            </a> */}
+              Made with ❤️ by Simone
+            </a>
         </div>
       </nav>
       <Dialog
@@ -100,10 +101,11 @@ export default function Navbar() {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="https://simonebellavia.com"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  target="_blank"
                 >
-                  Log in
+                  Made with ❤️ by Simone
                 </a>
               </div>
             </div>

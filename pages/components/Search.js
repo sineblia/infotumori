@@ -68,9 +68,9 @@ const Search = () => {
                 />
                 {data &&
                   data.map((tumors) => (
-                    <div className="relative mt-2 rounded-md shadow-sm">
+                    <div className="relative mt-10 p-5 rounded shadow">
                       <Link key={tumors._id} href={`/${tumors._id}`}>
-                        <h2>{tumors.name}</h2>
+                        <h2 className="text-gray-600">{tumors.name}</h2>
                       </Link>
                     </div>
                   ))}

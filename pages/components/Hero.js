@@ -1,7 +1,6 @@
 import Navbar from "../components/Navbar"
 
 export default function Hero() {
-
   return (
     <div className="bg-white">
       <Navbar />
