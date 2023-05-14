@@ -1,13 +1,12 @@
 import React from "react";
-import Hero from "./components/Hero";
 import Search from "./components/Search";
 
-const HomePage = () => {
+const SearchTumors = () => {
   return (
     <div>
-      <Hero />
+      <Search />
     </div>
   );
 };
 
-export default HomePage;
+export default SearchTumors;
