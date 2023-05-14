@@ -1,7 +1,6 @@
-// pages/[id].js
-
 import { connectToDatabase } from "../utils/mongodb";
 import { ObjectId } from "mongodb";
+import ReactMarkdown from "react-markdown";
 
 export async function getServerSideProps(context) {
   const { db } = await connectToDatabase();
@@ -26,7 +25,7 @@ export default function tumorsPage({ tumors }) {
   return (
     <div>
       <h1>{tumors.name}</h1>
-      <p>{tumors.description}</p>
+      <ReactMarkdown>{tumors.description}</ReactMarkdown>
     </div>
   );
 }
