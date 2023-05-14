@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar"
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -24,24 +25,24 @@ export default function Hero() {
               Informati per prevenire e per curare
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Infotumori è un portale d'informazione accessibile a chiunque, che
+              Infotumori è un portale d&apos;informazione accessibile a chiunque, che
               intende fornire le informazioni essenziali e le principali risorse
               per una corretta conoscenza del cancro. È rivolta alle persone che
               vogliono informarsi, prevenire e curare.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
+              <Link
                 href="/search_tumors"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Cerca
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-sm font-semibold leading-6 text-gray-900"
               >
                 Scopri di più <span aria-hidden="true">→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

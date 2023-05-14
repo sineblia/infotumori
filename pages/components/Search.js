@@ -55,7 +55,7 @@ const Search = () => {
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Cerca il tipo di tumore per il quale vorresti avere maggiori
               informazioni. È sufficiente inserire una parola chiave, come
-              "rene".
+              &quot;rene&quot;.
             </p>
 
             <div>
@@ -68,8 +68,8 @@ const Search = () => {
                 />
                 {data &&
                   data.map((tumors) => (
-                    <div className="relative mt-10 p-5 rounded shadow">
-                      <Link key={tumors._id} href={`/${tumors._id}`}>
+                    <div key={tumors._id} className="relative mt-10 p-5 rounded shadow">
+                      <Link href={`/${tumors._id}`}>
                         <h2 className="text-gray-600">{tumors.name}</h2>
                       </Link>
                     </div>
