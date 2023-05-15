@@ -15,15 +15,20 @@ export default function Footer() {
           </div>
           <div className="mt-6">
             <form
+              name="contact2"
+              method="POST"
+              netlify
+              data-netlify="true"
               onSubmit={(e) => e.preventDefault()}
               className="flex items-center justify-center bg-white rounded-lg p-1 sm:max-w-md sm:mx-auto"
             >
               <input
                 type="email"
-                placeholder="Enter your email"
+                name="email"
+                placeholder="Inserisci la tua email"
                 className="text-gray-500 w-full p-2 outline-none"
               />
-              <button className="p-2 px-3 rounded-lg font-medium text-white bg-blue-600 hover:bg-blue-500 active:bg-blue-700 duration-150 outline-none shadow-md focus:shadow-none sm:px-4">
+              <button className="p-2 px-3 rounded-lg font-medium text-white bg-blue-600 hover:bg-blue-500 active:bg-blue-700 duration-150 outline-none shadow-md focus:shadow-none sm:px-4" type="submit">
                 Iscriviti
               </button>
             </form>
