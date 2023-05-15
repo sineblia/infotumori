@@ -1,10 +1,27 @@
 import Link from "next/link";
 import React from "react";
 import Navbar from "./components/Navbar";
+import Head from "next/head";
 
 const About = () => {
   return (
     <div className="bg-white">
+      <Head>
+        <title>Infotumori.it – Su di noi</title>
+        <meta
+          name="description"
+          content="Su Infotumori: da chi è stato realizzato e perché."
+        />
+        <meta property="og:title" content="Infotumori.it – Su di noi" />
+        <meta
+          property="og:description"
+          content="Su Infotumori: da chi è stato realizzato e perché."
+        />
+        <meta property="og:image" content="https://i.imgur.com/inXa95S.png" />
+        <meta property="og:url" content="https://infotumori.it/" />
+        <meta name="twitter:card" content="https://i.imgur.com/inXa95S.png" />
+      </Head>
+
       <Navbar />
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div

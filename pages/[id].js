@@ -26,6 +26,16 @@ export async function getServerSideProps(context) {
 export default function tumorsPage({ tumors }) {
   return (
     <div className="bg-white">
+      <Head>
+        <title>Infotumori.it – {tumors.name}</title>
+        <meta name="description" content={tumors.description.substring(0, 155)} />
+        <meta property="og:title" content={tumors.name} />
+        <meta property="og:description" content={tumors.description.substring(0, 155)} />
+        <meta property="og:image" content="https://i.imgur.com/inXa95S.png" />
+        <meta property="og:url" content={`https://infotumori.it/${tumors._id}`} />
+        <meta name="twitter:card" content="https://i.imgur.com/inXa95S.png" />
+      </Head>
+
       <Navbar />
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div

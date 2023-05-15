@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Navbar from "./components/Navbar";
+import Head from "next/head";
     
 const Prevenzione = () => {
 
@@ -23,6 +24,22 @@ const Prevenzione = () => {
 
   return (
     <div className="bg-white">
+      <Head>
+        <title>Infotumori.it – Prevenzione</title>
+        <meta
+          name="description"
+          content="Informati su come prevenire il cancro."
+        />
+        <meta property="og:title" content="Infotumori.it – Prevenzione" />
+        <meta
+          property="og:description"
+          content="Informati su come prevenire il cancro."
+        />
+        <meta property="og:image" content="https://i.imgur.com/inXa95S.png" />
+        <meta property="og:url" content="https://infotumori.it/" />
+        <meta name="twitter:card" content="https://i.imgur.com/inXa95S.png" />
+      </Head>
+
       <Navbar />
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
@@ -106,8 +123,12 @@ const Prevenzione = () => {
             <ul className="mt-6 text-lg leading-8 underline text-blue-600 list-disc pl-5">
               {risorse.map((risorsa) => (
                 <li key={risorsa.id}>
-                  <Link href={risorsa.url} target="_blank" rel="noopener noreferrer">
-                      {risorsa.title}
+                  <Link
+                    href={risorsa.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {risorsa.title}
                   </Link>
                 </li>
               ))}

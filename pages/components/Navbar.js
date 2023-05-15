@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Informazioni", href: "/search_tumors" },
+  { name: "Cerca", href: "/search_tumors" },
   { name: "Prevenzione", href: "/prevenzione" },
   // { name: "Trattamento", href: "#" },
 ];

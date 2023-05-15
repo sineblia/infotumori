@@ -38,7 +38,7 @@ export default function Hero() {
                 Cerca
               </Link>
               <Link
-                href="#"
+                href="/about"
                 className="text-sm font-semibold leading-6 text-gray-900"
               >
                 Scopri di più <span aria-hidden="true">→</span>
