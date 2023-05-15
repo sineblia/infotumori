@@ -42,11 +42,11 @@ export default function tumorsPage({ tumors }) {
         </div>
 
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div className="text-center">
-            <h1 className="text-xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+          <div className="">
+            {/* <h1 className="text-xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               {tumors.name}
-            </h1>
-            <div className="mt-10">
+            </h1> */}
+            <div className="prose mt-10">
               <ReactMarkdown>{tumors.description}</ReactMarkdown>
             </div>
           </div>
