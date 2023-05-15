@@ -6,8 +6,8 @@ import Link from "next/link";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Informazioni", href: "/search_tumors" },
-  { name: "Prevenzione", href: "#" },
-  { name: "Trattamento", href: "#" },
+  { name: "Prevenzione", href: "/prevenzione" },
+  // { name: "Trattamento", href: "#" },
 ];
 
 export default function Navbar() {
