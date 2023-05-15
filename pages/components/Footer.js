@@ -1,4 +1,39 @@
+import React, { useState } from 'react';
+
 export default function Footer() {
+
+  const [email, setEmail] = useState('');
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    const url =
+      'https://gmail.us21.list-manage.com/subscribe/post-json?u=5dc77ec1e8676c353af843a14&id=77b64696c7&f_id=0053bbe1f0&c=?';
+    const formData = new FormData();
+    formData.append('EMAIL', email);
+
+    fetch(url, {
+      method: 'POST',
+      mode: 'cors',
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.result === 'success') {
+          alert('Iscrizione avvenuta con successo!');
+        } else {
+          alert('Si è verificato un errore durante l\'iscrizione.');
+        }
+      })
+      .catch((error) => {
+        alert('Si è verificato un errore durante l\'iscrizione.');
+        console.error(error);
+      });
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
   return (
     <section className="py-14 max-w-screen-xl mx-auto">
       <div className="relative overflow-hidden mx-4 px-4 py-14 rounded-2xl bg-blue-600 md:px-8 md:mx-8">
@@ -9,32 +44,36 @@ export default function Footer() {
               aggiornamenti
             </h3>
             <p className="text-blue-100 leading-relaxed">
-              Per rimanere aggiornati sui progressi della roadmap di Infotumori, sugli annunci
-              e sulle nuove funzionalità.
+              Per rimanere aggiornati sui progressi della roadmap di Infotumori,
+              sugli annunci e sulle nuove funzionalità.
             </p>
           </div>
           <div className="mt-6">
             <form
-              name="contact2"
-              method="POST"
-              netlify
-              data-netlify="true"
-              onSubmit={(e) => e.preventDefault()}
-              className="flex items-center justify-center bg-white rounded-lg p-1 sm:max-w-md sm:mx-auto"
+              onSubmit={onSubmit}
+              className="validate flex items-center justify-center bg-white rounded-lg p-1 sm:max-w-md sm:mx-auto"
             >
               <input
                 type="email"
                 name="email"
+                id="mce-EMAIL"
                 placeholder="Inserisci la tua email"
                 className="text-gray-500 w-full p-2 outline-none"
+                required
+                value={email}
+                onChange={handleEmailChange}
               />
-              <button className="p-2 px-3 rounded-lg font-medium text-white bg-blue-600 hover:bg-blue-500 active:bg-blue-700 duration-150 outline-none shadow-md focus:shadow-none sm:px-4" type="submit">
+              <button
+                className="p-2 px-3 rounded-lg font-medium text-white bg-blue-600 hover:bg-blue-500 active:bg-blue-700 duration-150 outline-none shadow-md focus:shadow-none sm:px-4"
+                type="submit"
+              >
                 Iscriviti
               </button>
             </form>
             <p className="mt-3 max-w-lg text-[15px] text-blue-100 sm:mx-auto">
               No spam, siamo attenti alla protezione dei dati.
             </p>
+            
           </div>
         </div>
         <div
