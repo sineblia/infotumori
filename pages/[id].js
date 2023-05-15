@@ -4,6 +4,8 @@ import { connectToDatabase } from "../utils/mongodb";
 import { ObjectId } from "mongodb";
 import ReactMarkdown from "react-markdown";
 
+import Head from "next/head";
+
 export async function getServerSideProps(context) {
   const { db } = await connectToDatabase();
   const { id } = context.params;

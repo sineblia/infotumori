@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <div>
       <Head>
-        <title>Infotumori.it – Portale d'informazione sul Cancro</title>
+        <title>Infotumori.it – Portale informativo sul Cancro</title>
         <meta name="description" content="Portale dedicato al cancro. Informati sulla malattia, su come prevenirla e come trattarla." />
         <meta property="og:title" content="Infotumori.it – Portale d'informazione sul Cancro" />
         <meta property="og:description" content="Portale dedicato al cancro. Informati sulla malattia, su come prevenirla e come trattarla." />

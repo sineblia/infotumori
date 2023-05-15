@@ -43,7 +43,7 @@ const About = () => {
               Su Infotumori: da chi è stato realizzato e perché
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Infotumori è un progetto che nasce dall'impegno e sforzo
+              Infotumori è un progetto che nasce dall&apos;impegno e sforzo
               individuale del sottoscritto,{" "}
               <Link
                 href="https://www.simonebellavia.com"
@@ -56,7 +56,7 @@ const About = () => {
               . Senza alcuna finalità di lucro, intende essere un supporto
               valido, intuitivo, facile da utilizzare, per chi vuole informarsi
               sul cancro, per chi vuole prevenirlo e, in futuro, per chi vuole
-              trattarlo. Il mio veicolo è la passione e un'ardente motivazione
+              trattarlo. Il mio veicolo è la passione e un&apos;ardente motivazione
               ad aiutare il prossimo.
             </p>
 
@@ -81,7 +81,7 @@ const About = () => {
               Sono presenti link di tracciamento nascosti o delle pubblicità?
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Il guadagno è nullo: non sono presenti pubblicità, non c'è la
+              Il guadagno è nullo: non sono presenti pubblicità, non c&apos;è la
               possibilità di effettuare donazioni, il traffico web non è
               tracciato. Il codice di sviluppo è open-source e disponibile su
               Github. Ciò non è inteso a cambiare in futuro.
@@ -94,7 +94,7 @@ const About = () => {
               La roadmap di sviluppo è lunga e verrà esposta gradualmente. Le
               idee sono molteplici: un mapping dei vari tipi di tumore rispetto
               alle cliniche specializzate sul suolo nazionale italiano; il
-              miglioramento e l'integrazione continuativa del database
+              miglioramento e l&apos;integrazione continuativa del database
               informativo già presente; se possibile, un middleware di
               comunicazione fra paziente e figura clinica. E via discorrendo.
             </p>
@@ -106,7 +106,7 @@ const About = () => {
               Essendo solo io a sviluppare il codice, mantenere il progetto e
               arricchire le informazioni di Infotumori, potrebbero essere
               presenti dei bug. Il progetto è in continua evoluzione. Chiedo un
-              po' di pazienza qualora alcune parti del sito non fossero
+              po&apos; di pazienza qualora alcune parti del sito non fossero
               esaustive o fruibili per come si vorrebbe.
             </p>
           </div>
