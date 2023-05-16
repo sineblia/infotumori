@@ -91,7 +91,7 @@ export default function Footer() {
             sostituiscono in alcun modo il consiglio medico professionale, la
             diagnosi o il trattamento. Non esitare a consultare un
             professionista sanitario per qualsiasi domanda riguardante la tua
-            salute o un'eventuale condizione medica.
+            salute o un&apos;eventuale condizione medica.
           </p>
         </div>
       </div>
