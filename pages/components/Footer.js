@@ -87,7 +87,7 @@ export default function Footer() {
       <div className="mt-8 border-2 rounded-md border-amber-300 relative overflow-hidden mx-4 px-4 py-6 rounded-2xl md:px-8 md:mx-8">
         <div className="relative z-10 max-w-xl mx-auto sm:text-center">
           <p className="text-gray-600 leading-relaxed">
-            I contenuti di questo articolo sono puramente informativi. Non
+            I contenuti presenti sul sito sono puramente informativi. Non
             sostituiscono in alcun modo il consiglio medico professionale, la
             diagnosi o il trattamento. Non esitare a consultare un
             professionista sanitario per qualsiasi domanda riguardante la tua
